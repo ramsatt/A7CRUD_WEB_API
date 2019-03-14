@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: PUT, GET, POST");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 // get passed parameter value, in this case, the record ID
 // isset() is a PHP function used to verify if a value is there or not
 $id=isset($_GET['id']) ? $_GET['id'] : die('ERROR: Record ID not found.');
