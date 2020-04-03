@@ -1,0 +1,154 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WebApi",
+		"_postman_id": "08b23845-6f5d-cb42-3c16-dc748c8fb699",
+		"description": "Angular 9 Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "View All Products",
+			"request": {
+				"url": "http://localhost/web_api/view.php",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "View All Products"
+			},
+			"response": []
+		},
+		{
+			"name": "View Single Product",
+			"request": {
+				"url": {
+					"raw": "http://localhost/web_api/view_one.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_api",
+						"view_one.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "View single product with ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"url": {
+					"raw": "http://localhost/web_api/delete.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"web_api",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Product",
+			"request": {
+				"url": "http://localhost/web_api/create.php",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Apple iPhone 11 Pro",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Next generation iPhone",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1099",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"url": "http://localhost/web_api/update.php",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Product Data updated",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "updated",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "999",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
